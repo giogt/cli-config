@@ -23,6 +23,7 @@ mv ~/.config/alacritty.toml ~/.config/alacritty.toml.bak
 mv ~/.config/wezterm ~/.config/wezterm.bak
 mv ~/.config/kitty ~/.config/kitty.bak
 mv ~/.config/neomutt ~/.config/neomutt.bak
+mv ~/.ideavimrc ~/.ideavimrc.bak
 ```
 
 Clean up your `nvim` state and caches:
@@ -47,6 +48,7 @@ ln -s ~/.cli-config/.config/alacritty.toml ~/.config
 ln -s ~/.cli-config/.config/wezterm ~/.config
 ln -s ~/.cli-config/.config/kitty ~/.config
 ln -s ~/.cli-config/.config/neomutt ~/.config
+ln -s ~/.cli-config/.ideavimrc ~
 ```
 
 You're done!

@@ -14,7 +14,7 @@ vim.g.mapleader = ' '
 
 vim.keymap.set('n', '<leader>n', '<cmd>enew<cr>')
 vim.keymap.set('n', '<leader>q', '<cmd>q<cr>')
-vim.keymap.set('n', '<leader>w', '<cmd>w<cr>')
+vim.keymap.set('n', '<leader>s', '<cmd>w<cr>')
 
 vim.keymap.set({'n', 'o', 'v'}, 'H', '^', { remap=false })
 vim.keymap.set({'n', 'o', 'v'}, 'L', '$', { remap=false })
@@ -25,9 +25,7 @@ vim.keymap.set('n', 'th', '<cmd>bprev<cr>', { remap=true })
 vim.keymap.set('n', 'tl', '<cmd>bnext<cr>', { remap=true })
 vim.keymap.set('n', 'td', '<cmd>bdelete<cr>', { remap=true })
 
-vim.keymap.set({ 'n', 'v'}, '<leader>dd', '<cmd>Yazi toggle<cr>') -- resume last session
-vim.keymap.set({ 'n', 'v'}, '<leader>dc', '<cmd>Yazi<cr>') -- open at current file
-vim.keymap.set({ 'n', 'v'}, '<leader>dw', '<cmd>Yazi toggle<cr>') -- open at nvim's working directory
+vim.keymap.set({ 'n', 'v'}, '<leader>fd', '<cmd>Yazi toggle<cr>')
 
 -- ====================
 -- Plugin customization

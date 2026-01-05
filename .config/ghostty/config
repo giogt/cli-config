@@ -47,7 +47,7 @@ theme = light:Dayfox,dark:Duskfox
 # Font
 # 
 
-font-size = 15
+font-size = 14
 
 # 
 # Shell

@@ -24,6 +24,7 @@ mv ~/.config/wezterm ~/.config/wezterm.bak
 mv ~/.config/kitty ~/.config/kitty.bak
 mv ~/.config/neomutt ~/.config/neomutt.bak
 mv ~/.ideavimrc ~/.ideavimrc.bak
+mv ~/.gitignore_global ~/.gitignore_global.bak
 ```
 
 Clean up your `nvim` state and caches:
@@ -49,6 +50,7 @@ ln -s ~/.cli-config/.config/wezterm ~/.config
 ln -s ~/.cli-config/.config/kitty ~/.config
 ln -s ~/.cli-config/.config/neomutt ~/.config
 ln -s ~/.cli-config/.ideavimrc ~
+ln -s ~/.cli-config/.gitignore_global ~
 ```
 
 You're done!

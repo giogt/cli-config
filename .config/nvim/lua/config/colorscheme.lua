@@ -1,3 +1,3 @@
 -- light: dayfox
 -- dark: duskfox
-vim.cmd('colorscheme dayfox')
+vim.cmd('colorscheme duskfox')

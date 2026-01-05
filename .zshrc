@@ -1,3 +1,8 @@
+# execute zsh local pre script, if it exists
+if [ -s "${HOME}/.zshrc.local.pre" ]; then
+    source "${HOME}/.zshrc.local.pre"
+fi
+#
 # ---------- #
 # Input mode #
 # ---------- #
@@ -42,12 +47,6 @@ alias curl_post_json="curl -X POST -H \"Content-Type: application/json\" -d"
 
 # zoxide
 eval "$(zoxide init zsh)"
-
-#
-# Useful directories
-#
-
-export LIBREWOLF_PROFILE="${HOME}/Library/Application Support/librewolf/Profiles/lv9cls7q.default-default"
 
 # --------- #
 # Dev tools #
@@ -100,3 +99,8 @@ fi
 export NVM_DIR="${HOME}/.nvm"
 [ -s "${NVM_DIR}/nvm.sh" ] && \. "${NVM_DIR}/nvm.sh"  # This loads nvm
 [ -s "${NVM_DIR}/bash_completion" ] && \. "${NVM_DIR}/bash_completion"  # This loads nvm bash_completion
+
+# execute zsh local post script, if it exists
+if [ -s "${HOME}/.zshrc.local.post" ]; then
+    source "${HOME}/.zshrc.local.post"
+fi

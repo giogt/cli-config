@@ -62,7 +62,7 @@ cursor-style-blink = false
 # System
 #
 
-quit-after-last-window-closed = true
+# quit-after-last-window-closed = true
 
 # 
 # Window
@@ -90,3 +90,4 @@ macos-titlebar-style = hidden
 macos-option-as-alt = true
 # keybind = option+left=unbind
 # keybind = option+right=unbind
+keybind = global:ctrl+alt+enter=new_window
